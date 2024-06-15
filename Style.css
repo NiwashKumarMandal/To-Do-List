@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b87ff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 34em;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+
+#new-task {
+  background-color: #ffffff;
+  padding: 1.8em 1.2em;
+  border-radius: 0.3em;
+  box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1em;
+  align-items: center;
+}
+
+#new-task input {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px solid #d1d3d4;
+  padding: 0.8em 0.5em;
+  color: #111111;
+  font-weight: 500;
+}
+
+#new-task input:focus {
+  outline: none;
+  border-color: #0b87ff;
+}
+
+#new-task button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #0b87ff;
+  color: #ffffff;
+  border: none;
+  padding: 0.8em 0.5em;
+  border-radius: 0.3em;
+  cursor: pointer;
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.8);
+  transition: transform 0.05s ease-in-out;
+}
+
+#new-task button:active {
+  box-shadow: 0 0 0;
+  transform: translate(3px, 3px);
+}
+
+#tasks {
+  background-color: #ffffff;
+  position: relative;
+  padding: 1.8em 1.25em;
+  margin-top: 3.8em;
+  width: 100%;
+  box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+  border-radius: 0.6em;
+}
+
+.task {
+  background-color: #ffffff;
+  padding: 0.3em 0.6em;
+  margin-top: 0.6em;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+}
+
+.task span {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.task button {
+  color: #ffffff;
+  padding: 0.8em 0;
+  width: 2.8em;
+  border-radius: 0.3em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #fb3b3b;
+}
+
+.edit {
+  background-color: #0b87ff;
+  margin-left: auto;
+  margin-right: 3em;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 1em;
+  }
+
+  #new-task {
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+  }
+
+  #new-task input,
+  #new-task button {
+    width: 100%;
+  }
+}
