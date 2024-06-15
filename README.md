@@ -2,7 +2,7 @@
 
 # To-Do List App
 ## Dive into the project
-[<img src="todo.png" width="65px" alt="todo-icon">](https://yourusername.github.io/todo-list-app/)<span><em>(Tap on to-do icon to view the project)</em></span>
+[<img src="todo.png" width="65px" alt="todo-icon">](https://niwashkumarmandal.github.io/To-Do-List/)<span><em>(Tap on to-do icon to view the project)</em></span>
 
 ## Overview:
 A simple and responsive to-do list application built using HTML, CSS, and JavaScript. This app allows users to add, edit, complete, and delete tasks, with data stored in the browser's local storage. It provides a user-friendly interface to manage tasks efficiently.
